@@ -1,5 +1,5 @@
-require "./neural_network.rb"
-require "./matrix_spec_helper.rb"
+require "./lib/neural_network.rb"
+require "./spec/matrix_spec_helper.rb"
 
 RSpec.describe NeuralNetwork do
   context "forward_pass" do
