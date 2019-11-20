@@ -15,9 +15,9 @@ def matrices_are_close?(a, b)
     return false
   end
 
-  a.each_with_index do |a_e, row, col|
-    b_e = b[row, col]
-    return false if (a_e - b_e).abs > delta
+  a.each_with_index do |a_element, row, col|
+    b_element = b[row, col]
+    return false if (a_element - b_element).abs > delta
   end
 
   return true
