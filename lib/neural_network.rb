@@ -9,6 +9,8 @@ class NeuralNetwork
   end
 
   def forward_pass(x)
-    x * weights
+    weights.reduce(x) do |inputs, one_layer_weights|
+      inputs * one_layer_weights
+    end
   end
 end
